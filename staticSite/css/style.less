@@ -29,17 +29,35 @@ body {
                 width: 400px;
             }
     
-            nav {
+            nav-component {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                width: 70%;
-                justify-content: space-evenly;
-    
-                a {
-                    color: #ffffff;
-                    text-decoration: none;
+                width: 100%;
+
+                nav {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70%;
+                    justify-content: space-evenly;
+
+                    .icon {
+                        display: none;
+                    }
+
+                    #myNav {
+
+                        a {
+                            color: #ffffff;
+                            text-decoration: none;
+                            font-size: 1.2em;
+                        }
+                    }
+        
+                    
                 }
             }
         }
@@ -56,16 +74,48 @@ body {
         width: 95%;
         padding: 1em;
         min-height: 500px;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap {
+            flex-wrap: wrap;
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: #374671 groove 3px;
+                padding: 1em;
+                margin: 1.5em;
+
+                img {
+                    border-radius: 40%;
+                }
+            }
+        }
     }
-    footer {
+    footer-component {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #955113;
-        border: #B59E4B groove 3px;
-        width: 95%;
-        padding: 1em;
-        min-height: 200px;
+        width: 100%;
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #955113;
+            border: #B59E4B groove 3px;
+            width: 95%;
+            padding: 1em;
+            min-height: 200px;
+        }
     }
 }
