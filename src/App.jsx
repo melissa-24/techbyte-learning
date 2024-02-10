@@ -6,6 +6,7 @@ import Index from "./views/Index";
 import About from "./views/About";
 import Courses from "./views/Courses";
 import Team from "./views/Team";
+import Apply from "./views/Apply";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/courses" element={<Courses />} />
         <Route exact path="/team" element={<Team />} />
+        <Route exact path="/apply" element={<Apply />} />
       </Routes>
       <Footer />
     </>
