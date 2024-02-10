@@ -4,6 +4,7 @@ import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Index from "./views/Index";
 import About from "./views/About";
+import Courses from "./views/Courses";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/courses" element={<Courses />} />
       </Routes>
       <Footer />
     </>
