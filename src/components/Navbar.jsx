@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <header>
@@ -11,11 +13,11 @@ const NavBar = () => {
             <i className="fa fa-bars"></i>
           </a>
           <nav id="myNav">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./courses.html">Courses</a>
-            <a href="./team.html">Meet the Team</a>
-            <a href="./apply.html">Apply</a>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/about"}>About</Link>
+            <Link to={"/courses"}>Courses</Link>
+            <Link to={"/team"}>Meet the Team</Link>
+            <Link to={"/apply"}>Apply</Link>
             <a href="https://learn.techbyte-learning.com" target="_blank">
               School Portal
             </a>
