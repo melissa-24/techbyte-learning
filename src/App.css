@@ -5,11 +5,13 @@
     --green: #18AC58;
     --green_shadow: #6e6e6e;
     --light_yellow: #F6E8B7;
-    --dark_yellow: rgb(239,215,128);
-    --header_gradient: linear-gradient(0deg, rgba(239,215,128,1) 42%, rgba(246,232,182,1) 79%);
+    --dark_yellow: rgb(239, 215, 128);
+    --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
 }
 
-HTML, body, * {
+HTML,
+body,
+  * {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -20,7 +22,7 @@ HTML, body, * {
 /*                */
 
 .navbar {
-    height:120px;
+    height: 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,7 +30,8 @@ HTML, body, * {
     background: var(--dark_yellow);
     background: var(--header_gradient);
     border-bottom: 5px solid var(--green);
-    transition: .25s;
+    transition: 0.25s;
+    box-shadow: 0px 0px 5px var(--green_shadow);
 }
 
 .page_title {
@@ -37,13 +40,14 @@ HTML, body, * {
     justify-content: flex-start;
     align-items: center;
     font-size: 34px;
+    text-shadow: 1px 1px 1px var(--green_shadow);
     color: var(--green);
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .page_title img {
     height: 85px;
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .navbar_menu {
@@ -52,7 +56,7 @@ HTML, body, * {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .navbar_menu, .drop {
@@ -67,11 +71,14 @@ HTML, body, * {
 .navbar_menu > li a:hover {
     background-color: var(--green_shadow);
     border-left: 1px solid var(--green);
+    text-shadow: 1px 1px 1px var(--dark_yellow);
+
 }
 
-.navbar_menu a,.drop li a {
+.navbar_menu a, .drop li a {
     text-decoration: none;
     color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
     text-transform: capitalize;
     font-family: monospace;
     display: block;
@@ -79,15 +86,18 @@ HTML, body, * {
     font-size: 16px;
     transition: background-color 0.2s ease-in-out;
     font-family: "Raleway", sans-serif;
+    pointer-events: none; /* disables hover and click events */
 }
 
 .drop li {
     opacity: 0;
     transform-origin: top center;
-    width: 125px
+    width: 125px;
+    box-shadow: 1px 1px 5px var(--green_shadow);
 }
 
 .drop li a {
+    pointer-events: none; /* disables hover and click events */
     width: 121px;
     padding: 10px 2px;
     text-align: center;
@@ -97,6 +107,7 @@ HTML, body, * {
 
 .drop li a:hover {
     background: var(--green_shadow);
+    
 }
 
 .navbar_menu li:hover .menu li:first-of-type {
@@ -123,6 +134,12 @@ HTML, body, * {
     border: 2px solid var(--green);
 }
 
+/* add additional styles for hover and click */
+.navbar_menu:hover > li > a,
+.navbar_menu:hover .drop li a {
+    pointer-events: auto; /* enables hover and click events */
+}
+
 @keyframes menu_inner {
     0% {
         opacity: 0;
@@ -134,57 +151,55 @@ HTML, body, * {
     }
 }
 
-
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .navbar {
         height: 95px;
     }
-	.page_title {
+    .page_title {
         font-size: 28px;
     }
-    
     .page_title img {
-        height: 60px
+        height: 60px;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .navbar {
         height: 95px;
     }
-	.page_title {
+    .page_title {
         font-size: 24px;
     }
-    .navbar_menu{
+    .navbar_menu {
         justify-content: center;
     }
     .page_title img {
-        height: 60px
+        height: 60px;
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
     .navbar {
         height: 85px;
     }
-	.page_title {
+    .page_title {
         font-size: 22px;
     }
-    
+
     .page_title img {
-        height: 50px
+        height: 50px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .navbar {
         height: 85px;
     }
-	.page_title {
+    .page_title {
         font-size: 18px;
     }
     .page_title img {
-        height: 50px
+        height: 50px;
     }
     .navbar_menu a {
         font-size: 14px;
@@ -198,15 +213,15 @@ HTML, body, * {
     }
 }
 
-@media screen and (max-width: 335px){
+@media screen and (max-width: 335px) {
     .navbar {
         height: 67px;
     }
-	.page_title {
+    .page_title {
         font-size: 14px;
     }
     .page_title img {
-        height: 35px
+        height: 35px;
     }
     .navbar_menu a {
         font-size: 12px;
