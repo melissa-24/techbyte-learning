@@ -2,7 +2,7 @@ import bee_logo from "../assets/images/tech_byte_learning_logo.png"
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav class="navbar">
             <div class="page_title">
                 <img src={ bee_logo } alt="TechByte Learning Bee" />
                 <h1>TechByte Learning</h1>

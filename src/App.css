@@ -1,1 +1,133 @@
 /* App.css */
+
+:root {
+    --white: #CBE5EC;
+    --green: #18AC58;
+    --green_shadow: #6e6e6e;
+    --light_yellow: #F6E8B7;
+    --dark_yellow: rgb(239,215,128);
+    --header_gradient: linear-gradient(0deg, rgba(239,215,128,1) 42%, rgba(246,232,182,1) 79%);
+}
+
+HTML, body, * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+/*                */
+/*     Nav Bar    */
+/*                */
+
+.navbar {
+    height:120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    border-bottom: 5px solid var(--green);
+}
+
+.page_title {
+    height: 100px;
+    width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 34px;
+    color: var(--green);
+}
+
+.page_title img {
+    height: 85px
+}
+
+.navbar_menu {
+    margin: 0 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar_menu > li {
+    margin: 0 2px;
+    text-align: center;
+}
+
+.navbar_menu > li a:hover {
+    background-color: var(--green_shadow);
+    border-left:1px solid var(--green);
+}
+
+.navbar_menu a,.drop li a {
+    text-decoration: none;
+    color: var(--green);
+    text-transform: capitalize;
+    font-family: monospace;
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+    font-family: "Raleway", sans-serif;
+}
+
+
+.drop li {
+    opacity: 0;  /* change back to 0 */
+    transform-origin: top center;
+    width:125px
+}
+
+.drop li a {
+    width: 121px;
+    padding: 10px 2px;
+    text-align: center;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+}
+
+.drop li a:hover {
+    background: var(--green_shadow);
+}
+
+.navbar_menu li:hover .menu li:first-of-type {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.1s;
+    border:2px solid var(--green);
+}
+
+.navbar_menu li:hover .menu li:nth-of-type(2) {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.2s;
+    border:2px solid var(--green);
+}
+
+.navbar_menu li:hover .menu li:nth-of-type(3) {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.3s;
+    border:2px solid var(--green);
+}
+
+.navbar_menu li:hover .menu li:last-of-type {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.4s;
+    border:2px solid var(--green);
+}
+
+@keyframes menu_inner {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
