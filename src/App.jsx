@@ -7,6 +7,7 @@ import About from "./views/About";
 import Courses from "./views/Courses";
 import Team from "./views/Team";
 import Apply from "./views/Apply";
+import Cookies from "./components/Cookies";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/apply" element={<Apply />} />
       </Routes>
+      <Cookies />
       <Footer />
     </>
   );
