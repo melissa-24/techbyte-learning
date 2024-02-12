@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { changeTitle } from "../utilities/utilityFunctions";
 import dev_instruction from "../assets/images/dev_instruction.jpg"
 import react_python from "../assets/images/react_and_python.jpg"
@@ -11,16 +12,18 @@ const Index = () => {
   return (
     <main >
       <div className="wrapper">
+        
         <div className="large_box">
           <h2>
             BEE PART OF OUR HIVE!
           </h2>
           <h3>
-            Introducing BeeDev - where learning meets industry-leading technologies and builds a solid foundation in web development! 🐝🌐
+            Introducing BeeDev - where learning meets industry-leading technologies and builds a solid foundation in web development!
           </h3>
           <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At BeeDev, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
           <p>With BeeDev, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
         </div>
+        <Link className="link">View Courses</Link>
 
         <div className="split_box">
           <div className="box_left_text">
@@ -32,7 +35,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="split_box">
+        <div className="split_box flip">
           <div className="box_left_img">
             <img src={react_python} alt="python and react" />
           </div>
@@ -55,7 +58,7 @@ const Index = () => {
         </div>
 
 
-        <div className="split_box">
+        <div className="split_box flip">
           <div className="box_left_img">
             <img src={newest_tech} alt="newest tech" />
           </div>
