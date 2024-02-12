@@ -9,23 +9,12 @@
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
 }
 
-<<<<<<< HEAD
-HTML,
-body,
-  * {
-=======
 HTML, body, * {
->>>>>>> dev
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
 
-<<<<<<< HEAD
-/*                */
-/*     Nav Bar    */
-/*                */
-=======
 body {
     width: 100%;
     background-color: #CBE5EC;
@@ -57,7 +46,6 @@ body {
 /*                         */
 /*         NAVBAR          */
 /*                         */
->>>>>>> dev
 
 .navbar {
     height: 120px;
@@ -110,10 +98,6 @@ body {
     background-color: var(--green_shadow);
     border-left: 1px solid var(--green);
     text-shadow: 1px 1px 1px var(--dark_yellow);
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
 }
 
 .navbar_menu a, .drop li a {
@@ -127,30 +111,18 @@ body {
     font-size: 16px;
     transition: background-color 0.2s ease-in-out;
     font-family: "Raleway", sans-serif;
-<<<<<<< HEAD
-    pointer-events: none; /* disables hover and click events */
-=======
     pointer-events: none;
->>>>>>> dev
 }
 
 .drop li {
     opacity: 0;
     transform-origin: top center;
     width: 125px;
-<<<<<<< HEAD
-    box-shadow: 1px 1px 5px var(--green_shadow);
-}
-
-.drop li a {
-    pointer-events: none; /* disables hover and click events */
-=======
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
 
 .drop li a {
     pointer-events: none;
->>>>>>> dev
     width: 121px;
     padding: 10px 2px;
     text-align: center;
@@ -187,15 +159,8 @@ body {
     border: 2px solid var(--green);
 }
 
-<<<<<<< HEAD
-/* add additional styles for hover and click */
-.navbar_menu:hover > li > a,
-.navbar_menu:hover .drop li a {
-    pointer-events: auto; /* enables hover and click events */
-=======
 .navbar_menu:hover > li > a, .navbar_menu:hover .drop li a {
     pointer-events: auto;
->>>>>>> dev
 }
 
 @keyframes menu_inner {
@@ -291,9 +256,6 @@ body {
         width: 80px;
         font-size: 12px;
     }
-<<<<<<< HEAD
-}
-=======
 }
 
 /*                        */
@@ -598,4 +560,3 @@ footer img {
 /*                            */
 /*       END FOOTER           */
 /*                            */
->>>>>>> dev
