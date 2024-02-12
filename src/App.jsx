@@ -1,12 +1,4 @@
 import "./App.css";
-<<<<<<< HEAD
-import Navbar from "./components/Navbar"
-
-const App = () => {
-  return <>
-    <Navbar />
-  </>;
-=======
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -32,7 +24,6 @@ const App = () => {
       <Footer />
     </>
   );
->>>>>>> dev
 };
 
 export default App;
