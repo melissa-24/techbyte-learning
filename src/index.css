@@ -1,4 +1,4 @@
-html, #root {
+/* html, #root {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -6,17 +6,22 @@ html, #root {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95%;
-}
-body header {
+  width: 100%;
+  background-color: #CBE5EC;
+  background-image: url('https://images.craftsnherbs.com/backgrounds/hex.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+/* body header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,57 +33,66 @@ body header {
   padding: 1em;
   min-height: 200px;
   color: #ffffff;
-}
-body header .row {
+} */
+
+/* body header .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-body header .row img {
+} */
+
+/* body header .row img {
   width: 400px;
-}
-body header .row nav {
+} */
+
+/* body header .row nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 70%;
   justify-content: space-evenly;
-}
-body header .row nav .icon {
+} */
+
+/* body header .row nav .icon {
   display: none;
-}
-body header .row nav #myNav a {
+} */
+
+/* body header .row nav #myNav a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2em;
-}
-body header h1,
+} */
+
+/* body header h1,
 body header h2 {
   margin: 0.5em;
-}
+} */
+
 body main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: #b59e4b groove 3px;
-  width: 95%;
-  padding: 1em;
-  min-height: 500px;
+  border: #b59e4b groove 3px; */
+  /* width: 100%;
+  min-height: 500px; */
 }
-body main .row {
+
+/* body main .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-body main .wrap {
+} */
+
+/* body main .wrap {
   flex-wrap: wrap;
-}
-body main .wrap .column {
+} */
+
+/* body main .wrap .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,18 +100,9 @@ body main .wrap .column {
   border: #374671 groove 3px;
   padding: 1em;
   margin: 1.5em;
-}
-body main .wrap .column img {
+} */
+
+/* body main .wrap .column img {
   border-radius: 40%;
-}
-body footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #955113;
-  border: #b59e4b groove 3px;
-  width: 95%;
-  padding: 1em;
-  min-height: 200px;
-}
+} */
+
