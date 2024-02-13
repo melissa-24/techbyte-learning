@@ -6,6 +6,7 @@ import react_python from "../assets/images/react_and_python.jpg"
 import projects from "../assets/images/projects.png"
 import newest_tech from "../assets/images/high_tech_dev.jpg"
 import your_career from "../assets/images/your_career.png"
+import Honeycomb from "../components/Honeycomb";
 
 const Index = () => {
   useEffect(() => changeTitle(""), []);
@@ -23,8 +24,8 @@ const Index = () => {
           <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At TechByte, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
           <p>With TechByte, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
         </div>
-        <Link className="link">View Courses</Link>
-
+        <Link to="/courses" className="link">View Courses</Link>
+        <Honeycomb />
         <div className="split_box">
           <div className="box_left_text">
             <h2>Building a Solid Foundation</h2>
