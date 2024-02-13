@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <main >
       <div className="wrapper">
-        
+        {/* SECTION 1 */}
         <div className="large_box">
           <h2>
             TechByte OF OUR HIVE!
@@ -25,7 +25,11 @@ const Index = () => {
           <p>With TechByte, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
         </div>
         <Link to="/courses" className="link">View Courses</Link>
+        {/* END SECTION 1 */}
+        {/* SECTION 2 */}
         <Honeycomb />
+        {/* END SECTION 2 */}
+        {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>Building a Solid Foundation</h2>
@@ -35,7 +39,8 @@ const Index = () => {
             <img src={dev_instruction} alt="Teaching" />
           </div>
         </div>
-
+        {/* END SECTION 3 */}
+        {/* SECTION 4 */}
         <div className="split_box flip">
           <div className="box_left_img">
             <img src={react_python} alt="python and react" />
@@ -45,7 +50,8 @@ const Index = () => {
             <p><span>R</span>eady to take your skills to the next level? Our TechByte program extends beyond the basics, introducing Python and JavaScript with React.js. Like bees who meticulously gather nectar from diverse sources, we encourage our students to explore different programming languages. With our expert instructors, you'll master these essential tools, enabling you to create dynamic and interactive web applications!</p>
           </div>
         </div>
-
+        {/* END SECTION 4 */}
+        {/* SECTION 5 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>Projects and Internship Opportunities</h2>
@@ -56,7 +62,8 @@ const Index = () => {
             <img src={projects} alt="projects" />
           </div>
         </div>
-
+        {/* END SECTION 5 */}
+        {/* SECTION 6 */}
         <div className="split_box flip">
           <div className="box_left_img">
             <img src={newest_tech} alt="newest tech" />
@@ -66,7 +73,8 @@ const Index = () => {
             <p><span>D</span>on't get stuck in the honeycomb of outdated techniques! Embrace the future with TechByte and pave your way to success in web development. Our industry-leading technologies, comprehensive curriculum, and focus on practical experience will set you apart from the swarm. Enroll with TechByte today and let us channel your passion into productive learning, preparing you to thrive in the buzzing world of web development!</p>
           </div>
         </div>
-
+        {/* END SECTION 6 */}
+        {/* SECTION 7 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>Expanding Opportunities</h2>
@@ -76,6 +84,7 @@ const Index = () => {
             <img src={your_career} alt="your career" />
           </div>
         </div>
+        {/* END SECTION 7 */}
       </div>
     </main>
   )
