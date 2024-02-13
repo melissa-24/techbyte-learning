@@ -18,7 +18,7 @@ const Index = () => {
             BEE PART OF OUR HIVE!
           </h2>
           <h3>
-            Introducing BeeDev - where learning meets industry-leading technologies and builds a solid foundation in web development!
+            Introducing TechByte Learning - where learning meets industry-leading technologies and builds a solid foundation in web development!
           </h3>
           <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At BeeDev, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
           <p>With BeeDev, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
