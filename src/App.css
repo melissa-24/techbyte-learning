@@ -284,7 +284,7 @@ main h1{
 }
 
 .large_box {
-    min-width: 375px;
+    min-width: 325px;
     margin: 20px 5px;
     padding: 5px 10px;
     display: flex;
@@ -345,12 +345,12 @@ main h1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 375px;
+    min-width: 325px;
 }
 
 .box_left_text, .box_right_text {
     width: 45%;
-    min-width: 375px;
+    min-width: 325px;
     min-height: 200px;
     display: flex;
     margin: 20px 5px;
@@ -361,7 +361,7 @@ main h1{
 
 .box_left_img, .box_right_img {
     width: 45%;
-    min-width: 375px;
+    min-width: 325px;
     min-height: 200px;
     margin: 20px 5px;
     display: flex;
@@ -371,7 +371,7 @@ main h1{
 
 .box_left_img img, .box_right_img img {
     width: 100%;
-    min-width: 375px;
+    min-width: 325px;
     border: 3px solid var(--green);
     box-shadow: 5px 5px 15px var(--green_shadow);
     border-radius: 20px;
@@ -568,6 +568,14 @@ footer img {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    width: 100%;
+    max-width: 1065px;
+}
+
+@media (max-width: 500px) {
+    .bumble_bee_image {
+        top: 130%;
+    }
 }
 
 .honeycomb_image {
