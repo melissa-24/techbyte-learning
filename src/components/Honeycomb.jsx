@@ -33,18 +33,20 @@ const Honeycomb = () => {
         "https://i.etsystatic.com/39688417/r/il/a739a1/4576833004/il_570xN.4576833004_o6q7.jpg", 
     ];
 
-    return ( 
-            <ul className="honeycomb_container">
-                {
-                    images.map((image, index) => ( 
-                        <li className="item" key={index}> 
-                        <a href={`#${(index+1)}`} title={(index+1)}>
-                            <img className="honeycomb_image" src={image} alt={index} /> 
-                        </a> 
-                    </li> 
-                ))} 
-            </ul> 
+    return (
+            <>
+                <img className="bumble_bee_image" src="https://images.craftsnherbs.com/beedev/flyingbee.gif" alt="bumble bee" />
+                <ul className="honeycomb_container">
+                    {
+                        images.map((image, index) => ( 
+                            <li className="item" key={index}> 
+                            <a href={`#${(index+1)}`} title={(index+1)}>
+                                <img className="honeycomb_image" src={image} alt={index} /> 
+                            </a> 
+                        </li> 
+                    ))} 
+                </ul> 
+            </>
         )
 }
-
 export default Honeycomb;
