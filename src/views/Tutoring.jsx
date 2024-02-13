@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
-const About = () => {
-  useEffect(() => changeTitle("About - "), []);
+const Tutoring = () => {
+  useEffect(() => changeTitle("Tutoring - "), []);
   return (
     <main>
-      <h1>About TechByte Learning</h1>
+      <h1>Tutoring Page</h1>
     </main>
   );
 };
 
-export default About;
+export default Tutoring;

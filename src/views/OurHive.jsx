@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
-const Team = () => {
-  useEffect(() => changeTitle("Our Team - "), []);
+const OurHive = () => {
+  useEffect(() => changeTitle("Our Hive - "), []);
   return (
     <main>
       <h1>Meet our Hive Members</h1>
@@ -78,4 +78,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default OurHive;
