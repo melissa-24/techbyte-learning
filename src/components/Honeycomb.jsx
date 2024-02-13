@@ -1,4 +1,5 @@
 import React from 'react';
+import flying_bee from "../assets/images/flyingbee.gif"
 
 const Honeycomb = () => { 
 
@@ -35,7 +36,7 @@ const Honeycomb = () => {
 
     return (
             <>
-                <img className="bumble_bee_image" src="https://images.craftsnherbs.com/beedev/flyingbee.gif" alt="bumble bee" />
+                <img className="bumble_bee_image" src={flying_bee} alt="bumble bee" />
                 <ul className="honeycomb_container">
                     {
                         images.map((image, index) => ( 
