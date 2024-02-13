@@ -18,10 +18,10 @@ const Index = () => {
             BEE PART OF OUR HIVE!
           </h2>
           <h3>
-            Introducing BeeDev - where learning meets industry-leading technologies and builds a solid foundation in web development!
+            Introducing TechByte Learning - where learning meets industry-leading technologies and builds a solid foundation in web development!
           </h3>
-          <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At BeeDev, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
-          <p>With BeeDev, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
+          <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At TechByte Learning, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
+          <p>With TechByte Learning, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
         </div>
         <Link className="link">View Courses</Link>
 
@@ -49,7 +49,7 @@ const Index = () => {
         <div className="split_box">
           <div className="box_left_text">
             <h2>Projects and Internship Opportunities</h2>
-            <p><span>A</span>t BeeDev, we nurture the growth of our students through real-world experience. Our curriculum places a strong emphasis on practical application, offering a range of exciting projects that allow you to showcase your skills. </p>
+            <p><span>A</span>t TechByte Learning, we nurture the growth of our students through real-world experience. Our curriculum places a strong emphasis on practical application, offering a range of exciting projects that allow you to showcase your skills. </p>
             <p>Additionally, we provide exceptional internship opportunities, allowing you to build your portfolio while learning from industry professionals. Stand out from the hive and leave with a buzzing portfolio that catches the attention of top recruiters!</p>
           </div>
           <div className="box_right_img">
@@ -63,15 +63,15 @@ const Index = () => {
             <img src={newest_tech} alt="newest tech" />
           </div>
           <div className="box_right_text">
-            <h2>Join BeeDev and Reach New Heights</h2>
-            <p><span>D</span>on't get stuck in the honeycomb of outdated techniques! Embrace the future with BeeDev and pave your way to success in web development. Our industry-leading technologies, comprehensive curriculum, and focus on practical experience will set you apart from the swarm. Enroll with BeeDev today and let us channel your passion into productive learning, preparing you to thrive in the buzzing world of web development!</p>
+            <h2>Join TechByte Learning and Reach New Heights</h2>
+            <p><span>D</span>on't get stuck in the honeycomb of outdated techniques! Embrace the future with TechByte Learning and pave your way to success in web development. Our industry-leading technologies, comprehensive curriculum, and focus on practical experience will set you apart from the swarm. Enroll with TechByte Learning today and let us channel your passion into productive learning, preparing you to thrive in the buzzing world of web development!</p>
           </div>
         </div>
 
         <div className="split_box">
           <div className="box_left_text">
             <h2>Expanding Opportunities</h2>
-            <p><span>B</span>eeDev ensures your growth and opens up endless possibilities in the dynamic industry of web development. Buzz on over to BeeDev and let us help you build a rewarding career!</p>
+            <p><span>T</span>echByte Learning ensures your growth and opens up endless possibilities in the dynamic industry of web development. Buzz on over to TechByte Learning and let us help you build a rewarding career!</p>
           </div>
           <div className="box_right_img">
             <img src={your_career} alt="your career" />
