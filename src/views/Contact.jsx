@@ -2,10 +2,21 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
 const Contact = () => {
-  useEffect(() => changeTitle("Contact Us - "), []);
+
+  useEffect(() => {
+    window.scrollTo(0,0),
+    changeTitle("Contact Us - ")
+  },[])
+
   return (
     <main>
-      <h1>Contact TechByte Learning</h1>
+      <div className="wrapper">
+        <div className="large_box">
+          <h2>
+            CONTACT US PAGE
+          </h2>
+        </div>
+      </div>
     </main>
   );
 };
