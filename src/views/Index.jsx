@@ -16,7 +16,7 @@ const Index = () => {
         {/* SECTION 1 */}
         <div className="large_box">
           <h2>
-            TechByte OF OUR HIVE!
+            BEE PART OF OUR HIVE!
           </h2>
           <h3>
             Introducing TechByte - where learning meets industry-leading technologies and builds a solid foundation in web development!
