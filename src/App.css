@@ -76,7 +76,6 @@ main h1{
 }
 
 
-
 /*                         */
 /*         NAVBAR          */
 /*                         */
@@ -144,12 +143,17 @@ main h1{
     text-transform: capitalize;
     font-family: monospace;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 2px;
     font-size: 16px;
+    width: 121px;
     transition: background-color 0.2s ease-in-out;
     font-family: "Raleway", sans-serif;
     pointer-events: none;
     z-index: 10;
+}
+
+.drop {
+    display: none;
 }
 
 .drop li {
@@ -170,6 +174,10 @@ main h1{
 
 .drop li a:hover {
     background: var(--green_shadow);
+}
+
+.navbar_menu:hover .drop {
+    display: block;
 }
 
 /* Drop down for 4 menu items */
@@ -312,7 +320,6 @@ main h1{
 /*                        */
 /*       END NAVBAR       */
 /*                        */
-
 
 /*                        */
 /*      PAGE LAYOUT       */
