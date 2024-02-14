@@ -18,33 +18,59 @@ HTML, body, * {
 body {
     width: 100%;
     background-color: #CBE5EC;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* background-image: url('https://images.craftsnherbs.com/backgrounds/hex.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
 }
 
 main {
-    min-height: 600px;
+    min-height: 77.5dvh;
 }
 
-main h1{
+body::before {
+    content : "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('https://images.craftsnherbs.com/backgrounds/hex.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -10;
+}
+
+main h1{ 
     text-align: center;
 }
 
+.wrapper {
+    width: 80%;
+    margin: 120px auto 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+    .wrapper {
+        margin: 80px auto 20px;
+    }
+}
+
+
 .link {
     position: relative;
+    width:325px;
+    text-align: center;
     font-size: 28px;
-    width:200px;
-    margin: 5px auto;
-    /* text-decoration: none; */
+    margin: 10px auto;
     color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
 }
 
 .link:hover {
     color: var(--green_shadow);
+    text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
     transition: 0.1s ;
 }
@@ -56,6 +82,8 @@ main h1{
 /*                         */
 
 .navbar {
+    position: fixed;
+    top: 0px;
     height: 120px;
     width: 100%;
     display: flex;
@@ -65,7 +93,8 @@ main h1{
     background: var(--header_gradient);
     border-bottom: 5px solid var(--green);
     transition: 0.25s;
-    box-shadow: 0px 0px 5px var(--green_shadow);
+    box-shadow: 0px 0px 25px var(--green_shadow);
+    z-index: 9999;
 }
 
 .page_title {
@@ -120,6 +149,7 @@ main h1{
     transition: background-color 0.2s ease-in-out;
     font-family: "Raleway", sans-serif;
     pointer-events: none;
+    z-index: 10;
 }
 
 .drop li {
@@ -140,7 +170,6 @@ main h1{
 
 .drop li a:hover {
     background: var(--green_shadow);
-    
 }
 
 /* Drop down for 4 menu items */
@@ -286,16 +315,8 @@ main h1{
 
 
 /*                        */
-/*        INDEX PAGE      */
+/*      PAGE LAYOUT       */
 /*                        */
-.wrapper {
-    width: 80%;
-    margin: 20px auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-}
 
 .large_box {
     min-width: 325px;
@@ -311,6 +332,8 @@ main h1{
     margin: 5px auto;
     text-decoration: none;
     color: #000;
+    position: relative;
+    font-size: 24px;
 }
 
 .large_box a:hover {
@@ -321,26 +344,32 @@ main h1{
     transition: 0.1s ;
 }
 
-.large_box h2 {
-    font-size: 28px;
+.large_box h1, .large_box h2, .large_box h3 {
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
     text-align:center;
     margin: 5px 0;
 }
 
+.large_box h1 {
+    font-size: 36px;
+}
+
+.large_box h2 {
+    font-size: 28px;
+}
+
 .large_box h3 {
     font-size: 22px;
-    text-shadow: 1px 1px 1px var(--green_shadow);
-    text-align:center;
-    margin: 5px 0;
+    color: #000;
 }
 
 .large_box p {
-    font-size: 20px;
     margin: 10px;
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+    font-size: 20px;
     text-align:start;
+    color: #000;
+    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
 .large_box p span {
@@ -348,11 +377,6 @@ main h1{
     font-weight: 700;
     line-height: 80%;
     text-shadow: 1px 1px 1px var(--green_shadow);
-}
-
-.large_box a {
-    position: relative;
-    font-size: 24px;
 }
 
 .split_box {
@@ -431,7 +455,7 @@ main h1{
 }
 
 /*                             */
-/*        END INDEX PAGE       */
+/*      END PAGE LAYOUT        */
 /*                             */
 
 
@@ -524,18 +548,38 @@ main h1{
 }
 
 /*                              */
-/*     End SlideOut Section     */
+/*      End Cookie Section      */
 /*                              */
 
 
+/*                              */
+/*        NEXT COHORT           */
+/*                              */
 
+.signup_link {
+    margin: 0 auto;
+    width: 45%;
+    min-width: 325px;
+    display: flex;
+    justify-content:center;
+    position: relative;    
+    transform: scale(.7, .7);
+    transition: 0.25s ;
+}
 
+.signup_link:hover {
+    transform: scale(1, 1) translateY(-1px);
+}
 
+.signup_link:active {
+    top:4px;
+    transform: scale(0.8, 0.8) translateY(-5px);
+    transition: 0.1s ;
+}
 
-
-
-
-
+/*                              */
+/*       END NEXT COHORT        */
+/*                              */
 
 
 
@@ -554,15 +598,34 @@ footer {
     border-top: 5px solid var(--green);
 }
 
-footer p {
+footer a {
+    position: relative;
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
     margin-left: 30px;
 }
 
-footer img {
-    height: 65px;
+footer a:hover {
+    color: var(--green_shadow);
+    text-shadow: 1px 1px 1px var(--green);
+    transform: scale(1.3, 1.2) translateY(-1px);
+    transition: 0.1s ;
+}
+
+.footer_images {
+    width: 200px;
     padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_image_one {
+    height: 80px;
+}
+
+.footer_image_two {
+    height: 60px;
 }
 
 /*                            */
@@ -576,20 +639,19 @@ footer img {
 /*    Honey Comb Tiles     */
 /*                         */
 
-.bumble_bee_image {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.honeycomb_wrapper {
     width: 100%;
-    max-width: 1065px;
 }
 
-@media (max-width: 500px) {
-    .bumble_bee_image {
-        top: 130%;
-    }
+.bumble_bee_image {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    width: 100%;
+    max-width: 1065px;
+    opacity: .6;
 }
 
 .honeycomb_image {
@@ -752,6 +814,7 @@ opacity: 1;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
 }
 
 .error_404 h1, .error_404 h4 {
@@ -768,7 +831,7 @@ color: var(--green);
 
 .error_image {
     margin: 10px auto 20px;
-    height: 63%;
+    /* height: 63%; */
     width: 63%;
     border: 4px solid var(--green);
     border-radius: 10px;

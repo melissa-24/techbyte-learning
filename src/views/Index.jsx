@@ -9,7 +9,12 @@ import your_career from "../assets/images/your_career.png"
 import Honeycomb from "../components/Honeycomb";
 
 const Index = () => {
-  useEffect(() => changeTitle(""), []);
+
+  useEffect(() => {
+    window.scrollTo(0,0),
+    changeTitle("")
+  },[])
+
   return (
     <main >
       <div className="wrapper">
@@ -79,6 +84,7 @@ const Index = () => {
           <div className="box_left_text">
             <h2>Expanding Opportunities</h2>
             <p><span>T</span>echByte ensures your growth and opens up endless possibilities in the dynamic industry of web development. Buzz on over to TechByte and let us help you build a rewarding career!</p>
+            <Link to="/nexthive" className="link">Next Cohort Dates</Link>
           </div>
           <div className="box_right_img">
             <img src={your_career} alt="your career" />

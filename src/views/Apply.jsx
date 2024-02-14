@@ -2,10 +2,21 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
 const Apply = () => {
-  useEffect(() => changeTitle("Apply - "), []);
+
+  useEffect(() => {
+    window.scrollTo(0,0),
+    changeTitle("Apply - ")
+  },[])
+
   return (
     <main>
-      <h1>Apply</h1>
+      <div className="wrapper">
+        <div className="large_box">
+          <h2>
+            APPLY PAGE
+          </h2>
+        </div>
+      </div>
     </main>
   );
 };
