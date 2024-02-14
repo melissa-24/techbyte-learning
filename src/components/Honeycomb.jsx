@@ -6,7 +6,7 @@ const Honeycomb = () => {
 // Add 'hidden' class to the element after half a second
     setTimeout(function() {
         document.querySelector('.honeycomb_container').classList.add('reveal');
-    }, 500);
+    }, 600);
 
     const images = [ 
         "https://i.pinimg.com/originals/01/e5/00/01e500fca29c045d432b64f285f9c229.png", 
