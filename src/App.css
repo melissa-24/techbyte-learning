@@ -143,6 +143,7 @@ main h1{
     
 }
 
+/* Drop down for 4 menu items */
 .navbar_menu li:hover .menu li:first-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.1s;
@@ -164,6 +165,19 @@ main h1{
 .navbar_menu li:hover .menu li:last-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.4s;
+    border: 2px solid var(--green);
+}
+
+/* Drop down for 2 menu items */
+.navbar_menu li:hover .menu2 li:first-of-type {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.1s;
+    border: 2px solid var(--green);
+}
+
+.navbar_menu li:hover .menu2 li:last-of-type {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.2s;
     border: 2px solid var(--green);
 }
 

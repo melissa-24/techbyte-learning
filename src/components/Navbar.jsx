@@ -20,7 +20,7 @@ const NavBar = () => {
         </ul>
         </li>
         <li><Link to="#">News</Link>
-        <ul className="drop menu">
+        <ul className="drop menu2">
           <li><Link to="nexthive">Next Cohort</Link></li>
           <li><Link to="news">Hot Off The Press</Link></li>
           {/* <li><Link to="#">Something Here!!</Link></li>
