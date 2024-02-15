@@ -55,7 +55,7 @@ const Honeycomb = () => {
           newCombs[currentIndex.current] = images[currentIndex.current];
           return newCombs;
         });
-      }, 50);
+      }, window.innerWidth <= 450 ? 0 : 50);
     }
   }, [combImages]);
 
