@@ -722,9 +722,6 @@ footer a:hover {
     set it to the maximum set but 
     feel free to tweak */
     width: 37.5rem;
-    /* This is the only drawback I can find.
-    We may need to set the height manually due
-    to the dynanic building aspect. */
     /* animation: 3s slide-left; */
 }
 
