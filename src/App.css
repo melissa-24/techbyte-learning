@@ -9,6 +9,10 @@
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
 }
 
+#root {
+    overflow-x: hidden;
+}
+
 HTML, body, * {
     margin: 0px;
     padding: 0px;
@@ -671,7 +675,6 @@ footer a:hover {
     /* This is the only drawback I can find.
     We may need to set the height manually due
     to the dynanic building aspect. */
-    height: 550px;
     /* animation: 3s slide-left; */
 }
 
@@ -688,6 +691,10 @@ footer a:hover {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.placeholder {
+    opacity: 0 !important;
 }
 
 .item {
@@ -753,6 +760,9 @@ footer a:hover {
 }
 
 @media (min-width: 22rem) and (max-width: 31.999rem) {
+    .item {
+        animation: none;
+    }
 	.honeycomb_container {
 		max-width: 15rem;
 	}

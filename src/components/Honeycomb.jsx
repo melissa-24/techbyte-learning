@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import flying_bee from "../assets/images/flyingbee.gif";
 
 // This was moved outside the component to prevent rebuilding every loop iteration
@@ -37,14 +37,24 @@ const images = [
 const Honeycomb = () => {
   // This needs to be a ref to track through rerenders
   const currentIndex = useRef(-1);
-  const [combImages, setCombImages] = useState([]);
+  const [combImages, setCombImages] = useState(
+    [...Array(images.length)].map((_, i) => (
+      <div className="item placeholder" key={i}>
+        {" "}
+      </div>
+    ))
+  );
 
   useEffect(() => {
     // This conditional is required to stop this useEffect loop
     if (currentIndex.current !== images.length) {
       setTimeout(() => {
         currentIndex.current += 1;
-        setCombImages((prev) => [...prev, images[currentIndex.current]]);
+        setCombImages((prev) => {
+          const newCombs = [...prev];
+          newCombs[currentIndex.current] = images[currentIndex.current];
+          return newCombs;
+        });
       }, 50);
     }
   }, [combImages]);
