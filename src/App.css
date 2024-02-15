@@ -663,23 +663,26 @@ footer a:hover {
 
 .honeycomb_container {
 	padding: 1rem 0 2.4rem;
-    opacity: 0;
-    transition: opacity 2s;
-    animation: 2s slide-left;
+    /* The width must be fixed initially 
+    to prevent comb sliding on load, I
+    set it to the maximum set but 
+    feel free to tweak */
+    width: 37.5rem;
+    /* This is the only drawback I can find.
+    We may need to set the height manually due
+    to the dynanic building aspect. */
+    height: 550px;
+    /* animation: 3s slide-left; */
 }
 
-.honeycomb_container.reveal {
-opacity: 1;
-}
-
-@keyframes slide-left {
+/* @keyframes slide-left {
     from {
         margin-left: 100%;
     }
     to {
         margin-left: 0%;
     }
-}
+} */
 
 .honeycomb_container::after {
 	content: "";
@@ -693,6 +696,18 @@ opacity: 1;
 	position: relative;
 	display: inline-block;
 	margin: 0.375rem;
+    animation: 1s reveal;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: scale(0) translateX(1000px) translateY(-250px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateX(0) translateY(0);
+    }
 }
 
 .item::before {
