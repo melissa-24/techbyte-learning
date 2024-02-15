@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
-const News = () => {
+const Pricing = () => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("News - ")
+    changeTitle("Pricing Plans - ")
   },[])
 
   return (
@@ -13,7 +13,7 @@ const News = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            NEWS PAGE
+            PRICING PAGE
           </h2>
         </div>
       </div>
@@ -21,4 +21,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Pricing;

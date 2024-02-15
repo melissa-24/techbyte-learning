@@ -205,18 +205,25 @@ main h1{
     border: 2px solid var(--green);
 }
 
-/* Drop down for 2 menu items */
+/* Drop down for 3 menu items */
 .navbar_menu li:hover .menu2 li:first-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.1s;
     border: 2px solid var(--green);
 }
 
-.navbar_menu li:hover .menu2 li:last-of-type {
+.navbar_menu li:hover .menu2 li:nth-of-type(2) {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.2s;
     border: 2px solid var(--green);
 }
+
+.navbar_menu li:hover .menu2 li:last-of-type {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.3s;
+    border: 2px solid var(--green);
+}
+
 
 .navbar_menu:hover > li > a, .navbar_menu:hover .drop li a {
     pointer-events: auto;
@@ -473,7 +480,6 @@ main h1{
         text-shadow: 1px 1px 1px var(--green_shadow);
 }
 
-
 .add_background {
     background-color: var(--light_yellow);
     border: 5px solid var(--green);
@@ -484,8 +490,6 @@ main h1{
 /*                             */
 /*      END PAGE LAYOUT        */
 /*                             */
-
-
 
 
 /*                             */
