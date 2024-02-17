@@ -729,6 +729,59 @@ main h1{
 /*                             */
 
 
+/*                             */
+/*         Tutoring            */
+/*                             */
+
+.instructors_card {
+    max-width: 1300px;
+    min-width: 325px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.instructor_one {
+    position: relative;
+    width: 250px;
+    margin: 15px auto;
+    padding: 5px;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    box-shadow: 5px 5px 10px var(--green_shadow);
+}
+
+.instructor_one h2 {
+    text-align: center;
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+}
+
+.instructor_one img {
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--green);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.instructor_one li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/*                             */
+/*      END Tutoring           */
+/*                             */
+
+
 
 /*                            */
 /*           FOOTER           */
