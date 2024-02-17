@@ -59,8 +59,10 @@ main h1{
     .wrapper {
         margin: 80px auto 20px;
     }
+    main {
+        min-height: 82dvh;
+    }
 }
-
 
 .link {
     position: relative;
@@ -70,13 +72,13 @@ main h1{
     margin: 10px auto;
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
+    transition: all 300ms ease;
 }
 
 .link:hover {
     color: var(--green_shadow);
     text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
 
@@ -352,13 +354,13 @@ main h1{
     text-shadow: 1px 1px 1px var(--green_shadow);
     position: relative;
     font-size: 24px;
+    transition: all 300ms ease;
 }
 
 .large_box a:hover {
     color: var(--green_shadow);
     text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
 .large_box h1, .large_box h2, .large_box h3, .large_box h4 {
@@ -653,7 +655,7 @@ main h1{
     color: var(--green);
     text-shadow: 0.5px 0.5px 1px var(--green_shadow);
     text-decoration: underline;
-    transition: 0.1s ;
+    transition: all 300ms ease;
 }
 
 #apply_now:hover {
@@ -792,8 +794,6 @@ main h1{
 /*                             */
 
 
-
-
 /*                             */
 /*      Pricing Page           */
 /*                             */
@@ -926,13 +926,36 @@ main h1{
     }
 }
 
+/*                              */
+/*     END PRICING PAGES        */
+/*                              */
 
 
 
+/*                              */
+/*          DISCORD             */
+/*                              */
+
+#discord_link {
+    margin-top: 40px;
+    text-align: center;
+    width: 325px;
+}
+
+.discord {
+    margin: 20px auto;
+    width: 70%;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px var(--green_shadow);
+    min-width: 325px;
+}
 
 
 
-
+/*                              */
+/*       END DISCORD            */
+/*                              */
 
 
 /*                            */
@@ -955,13 +978,13 @@ footer a {
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
     margin-left: 30px;
+    transition: all 300ms ease;
 }
 
 footer a:hover {
     color: var(--green_shadow);
     text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
 .footer_images {
@@ -1015,22 +1038,8 @@ footer a:hover {
 
 .honeycomb_container {
 	padding: 1rem 0 2.4rem;
-    /* The width must be fixed initially 
-    to prevent comb sliding on load, I
-    set it to the maximum set but 
-    feel free to tweak */
     width: 37.5rem;
-    /* animation: 3s slide-left; */
 }
-
-/* @keyframes slide-left {
-    from {
-        margin-left: 100%;
-    }
-    to {
-        margin-left: 0%;
-    }
-} */
 
 .honeycomb_container::after {
 	content: "";
@@ -1201,7 +1210,6 @@ color: var(--green);
 
 .error_image {
     margin: 10px auto 20px;
-    /* height: 63%; */
     width: 63%;
     border: 4px solid var(--green);
     border-radius: 10px;
