@@ -704,7 +704,7 @@ main h1{
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
 
-#css, #html5, #javascript, #bootstrap, #sass {
+#css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
     height: 80px;
     width: 70px;
 }
@@ -719,14 +719,9 @@ main h1{
     width: 100px;
 }
 
-#reactjs,#mysql {
-    height: 80px;
-    width: 80px;
-}
-
 #expressjs, #nodejs {
     height: 80px;
-    width: 110px;
+    width: 100px;
 }
 
 /*                             */
