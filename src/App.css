@@ -745,13 +745,13 @@ main h1{
 .instructor_one {
     position: relative;
     width: 250px;
+    height: 245px;
     margin: 15px auto;
     padding: 5px;
     border: 3px solid var(--green);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background: var(--dark_yellow);
     background: var(--header_gradient);
@@ -773,6 +773,7 @@ main h1{
 }
 
 .instructor_one li {
+    width: 60px;
     list-style-type: none;
     text-align: center;
 }

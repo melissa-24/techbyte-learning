@@ -60,10 +60,10 @@ const Tutoring = () => {
           {[...instructors].map((instructor, index) => {
             return(
               <div className="instructor_one" key={index}>
+                <img src="https://t4.ftcdn.net/jpg/00/64/67/27/360_F_64672736_U5kpdGs9keUll8CRQ3p3YaEv2M6qkVY5.jpg" alt="User Icon" />
                 <h2>
                   {instructor.name}
                 </h2>
-                <img src="https://t4.ftcdn.net/jpg/00/64/67/27/360_F_64672736_U5kpdGs9keUll8CRQ3p3YaEv2M6qkVY5.jpg" alt="User Icon" />
                   <br />
                   <ul>
                     {[...instructor.technologies].map((tech, idx) => {
