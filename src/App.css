@@ -472,6 +472,8 @@ main h1{
 
 
 .box_left_text h4, .box_right_text h4 {
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
     font-size: 18px;
     text-align: start;
     color: #000;
@@ -665,16 +667,67 @@ main h1{
     transform: scale(1, 1) translateY(-1px);
 }
 
-#web_fund, #pern, #python, #projects  {
-    height: 120px;
-    width: 300px;
+#projects, #intern  {
+    min-width: 325px;
+    aspect-ratio: 2/1;
     margin: 0 auto;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
     border: 3px solid var(--green);
     border-radius: 10px;
     box-shadow: 3px 3px 8px var(--green_shadow);
 }
 
+.course_icons {
+    width: 45%;
+    min-width: 325px;
+    min-height: 200px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
 
+#css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    position: relative;
+    padding: 5px;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px var(--green_shadow);
+}
+
+#css:hover, #html5:hover, #javascript:hover, #bootstrap:hover, #sass:hover, #postgres:hover, #python:hover, #django:hover, #flask:hover, #reactjs:hover, #mysql:hover, #expressjs:hover, #nodejs:hover {
+    transition: 0.1s ;
+    transform: scale(1.3, 1.3) translateY(-1px);
+    box-shadow: 5px 5px 10px var(--green_shadow);
+}
+
+#css, #html5, #javascript, #bootstrap, #sass {
+    height: 80px;
+    width: 70px;
+}
+
+#postgres, #python, #django {
+    height: 80px;
+    width: 80px;
+}
+
+#flask {
+    height: 80px;
+    width: 100px;
+}
+
+#reactjs,#mysql {
+    height: 80px;
+    width: 80px;
+}
+
+#expressjs, #nodejs {
+    height: 80px;
+    width: 110px;
+}
 
 /*                             */
 /*      END Courses            */
