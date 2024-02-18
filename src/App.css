@@ -59,8 +59,10 @@ main h1{
     .wrapper {
         margin: 80px auto 20px;
     }
+    main {
+        min-height: 82dvh;
+    }
 }
-
 
 .link {
     position: relative;
@@ -70,13 +72,13 @@ main h1{
     margin: 10px auto;
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
+    transition: all 300ms ease;
 }
 
 .link:hover {
     color: var(--green_shadow);
     text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
 
@@ -348,18 +350,17 @@ main h1{
 .large_box a {
     width:200px;
     margin: 5px auto;
-    text-decoration: none;
-    color: #000;
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
     position: relative;
     font-size: 24px;
+    transition: all 300ms ease;
 }
 
 .large_box a:hover {
-    text-decoration: none;
-    color: var(--green);
-    text-shadow: 1px 1px 1px var(--green_shadow);
+    color: var(--green_shadow);
+    text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
 .large_box h1, .large_box h2, .large_box h3, .large_box h4 {
@@ -415,7 +416,7 @@ main h1{
     min-width: 325px;
     min-height: 200px;
     display: flex;
-    margin: 20px 5px;
+    margin: 0px 5px 20px 5px;
     padding: 5px 10px;
     flex-direction: column;
     justify-content:center;
@@ -650,10 +651,11 @@ main h1{
 
 #apply_now {
     margin-top: 20px;
+    text-align: center;
     color: var(--green);
     text-shadow: 0.5px 0.5px 1px var(--green_shadow);
     text-decoration: underline;
-    transition: 0.1s ;
+    transition: all 300ms ease;
 }
 
 #apply_now:hover {
@@ -696,10 +698,10 @@ main h1{
     border: 3px solid var(--green);
     border-radius: 10px;
     box-shadow: 3px 3px 8px var(--green_shadow);
+    transition: all 300ms ease;
 }
 
 #css:hover, #html5:hover, #javascript:hover, #bootstrap:hover, #sass:hover, #postgres:hover, #python:hover, #django:hover, #flask:hover, #reactjs:hover, #mysql:hover, #expressjs:hover, #nodejs:hover {
-    transition: 0.1s ;
     transform: scale(1.3, 1.3) translateY(-1px);
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
@@ -733,19 +735,19 @@ main h1{
 /*         Tutoring            */
 /*                             */
 
-.instructors_card {
+.card_container {
     max-width: 1300px;
     min-width: 325px;
-    margin: 10px auto;
+    margin: 0px auto 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.instructor_one {
+.card_one {
     position: relative;
     width: 250px;
-    height: 245px;
+    min-height: 245px;
     margin: 15px auto;
     padding: 5px;
     border: 3px solid var(--green);
@@ -756,23 +758,32 @@ main h1{
     background: var(--dark_yellow);
     background: var(--header_gradient);
     box-shadow: 5px 5px 10px var(--green_shadow);
+    transition: all 300ms ease;
+
+    &:hover, &:focus-within {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 16px 2px var(--green_shadow);
+    }
+
 }
 
-.instructor_one h2 {
+.card_one h2 {
     text-align: center;
+    margin: 5px 0;
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
 }
 
-.instructor_one img {
+.card_one img {
     height: 100px;
     width: 100px;
+    background-color: var(--green_shadow);
     border: 3px solid var(--green);
     border-radius: 50%;
     margin-top: 10px;
 }
 
-.instructor_one li {
+.card_one li {
     width: 60px;
     list-style-type: none;
     text-align: center;
@@ -782,6 +793,169 @@ main h1{
 /*      END Tutoring           */
 /*                             */
 
+
+/*                             */
+/*      Pricing Page           */
+/*                             */
+
+.pricing_wrapper {
+    display: grid;
+    place-items: center;
+}
+
+
+.pricing_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 60px;
+    width: 80vw;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    > * {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .pricing_card {
+        min-width: 15rem;
+        max-width: calc(12.5rem + 13vw);
+        background-color: var(--dark_yellow);
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow: 4px 4px 16px -2px var(--green_shadow);
+        position: relative;
+        transition: all 300ms ease;
+
+        .pricing_ribbon {
+            position: absolute;
+            top: 32px;
+            right: 24px;
+            border-radius: 30px;
+            border-bottom-left-radius: 0;
+            height: 3rem;
+            width: 100%;
+            background-color: var(--dark_yellow);
+            box-shadow: 6px 6px 16px -6px var(--green_shadow);
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 3rem;
+                width: 24px;
+            }
+
+            &::before {
+                border-bottom-left-radius: 30px;
+                border-top-left-radius: 30px;
+                background-color: var(--green_shadow);
+                height: 2rem;
+                z-index: 1;
+            }
+
+            &::after {
+                height: 1rem;
+                background-color: var(--dark_yellow);
+            }
+
+            .pricing_ribbon-text {
+                position: absolute;
+                top: 50%;
+                left: 24px;
+				width: 100%;
+                transform: translatey(-50%);
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--green);
+                text-shadow: 1px 1px 1px var(--green_shadow);
+				text-align: center
+            }
+        }
+        
+        img {
+            display: block;
+            max-width: 100%;
+            aspect-ratio: 16/9;
+            height: auto;
+            object-fit: cover;
+            border-top-left-radius: 8px;;
+            border-top-right-radius: 8px;
+        }
+
+        .pricing_card-info {
+            color: #0D1F2D;
+            padding: 5px;
+
+            .card-text {
+                line-height: 1.3;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--green);
+                text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+                outline: none;
+                display: block;
+                margin: 10px auto 8px;
+                width: fit-content;
+                text-align: center;
+                border: thin solid var(--green);
+                box-shadow: 2px 2px 4px var(--green_shadow);
+                padding: 8px 16px;
+                border-radius: 4px;
+                transition: background-color 300ms ease, color 300ms ease;
+                
+                &:hover, &:focus {
+                    background-color: var(--green);
+                    color: var(--light_yellow);
+                    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+                    box-shadow: 4px 4px 8px var(--green_shadow);
+                    border: thin solid var(--light_yellow);
+
+                }
+            }
+        }
+
+        &:hover, &:focus-within {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 16px 2px var(--green_shadow);
+        }
+    }
+}
+
+/*                              */
+/*     END PRICING PAGES        */
+/*                              */
+
+
+
+/*                              */
+/*          DISCORD             */
+/*                              */
+
+#discord_link {
+    margin-top: 40px;
+    text-align: center;
+    width: 325px;
+}
+
+.discord {
+    margin: 20px auto;
+    width: 70%;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px var(--green_shadow);
+    min-width: 325px;
+}
+
+
+
+/*                              */
+/*       END DISCORD            */
+/*                              */
 
 
 /*                            */
@@ -804,13 +978,13 @@ footer a {
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
     margin-left: 30px;
+    transition: all 300ms ease;
 }
 
 footer a:hover {
     color: var(--green_shadow);
     text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
 .footer_images {
@@ -864,22 +1038,8 @@ footer a:hover {
 
 .honeycomb_container {
 	padding: 1rem 0 2.4rem;
-    /* The width must be fixed initially 
-    to prevent comb sliding on load, I
-    set it to the maximum set but 
-    feel free to tweak */
     width: 37.5rem;
-    /* animation: 3s slide-left; */
 }
-
-/* @keyframes slide-left {
-    from {
-        margin-left: 100%;
-    }
-    to {
-        margin-left: 0%;
-    }
-} */
 
 .honeycomb_container::after {
 	content: "";
@@ -1050,7 +1210,6 @@ color: var(--green);
 
 .error_image {
     margin: 10px auto 20px;
-    /* height: 63%; */
     width: 63%;
     border: 4px solid var(--green);
     border-radius: 10px;
